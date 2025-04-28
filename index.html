@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/571a50f469.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<style type="text/tailwindcss">
 
-  </style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          manrope: ['Manrope', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
 
 </head>
-<body>
+<body class="font-manrope">
   <!-- main content -->
     <main class="max-w-screen-xl mx-auto px-16">
     <!-- header -->
      <header class="lg:flex pt-10 mb-20">
       <!-- text content -->
       <div>
-        <h1 class="text-4xl md:text-7xl font-bold">It's good<br /> 
+        <h1 class="text-4xl md:text-7xl">It's good<br /> 
           tea time at The<br /> Tea House</h1>
           <br/>
           <p class="text-gray-500 w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
@@ -35,7 +42,7 @@
           <img class="w-100" src="images/banner.png" alt="">
         </div>
         <!-- image card -->
-        <div class="flex items-center bg-white shadow-lg px-2 py-2 md:px-5 md:py-4 lg:py-4 rounded-lg absolute top-28 md:top-55 md:left-5 lg:top-61 lg:left-5 ">
+        <div class="flex items-center bg-white shadow-lg px-2 py-2 md:px-5 md:py-4 lg:py-4 rounded-lg absolute top-28 md:top-80 md:left-28 lg:top-61 lg:left-5 ">
           <!-- icon -->
           <div>
             <i class="fa-solid fa-star text-2xl text-orange-500"></i>
@@ -60,7 +67,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <!-- card 1 -->
               <div class="bg-gray-50 shadow-md rounded-lg overflow-hidden p-5">
-                <img src="images/tea-1.png" alt="" class="w-100 h-48 object-contain rounded-lg mb-4">
+                <img src="images/tea-1.png" alt="" class="w-full h-48 object-contain rounded-lg mb-4">
                 <div class="text-center p-2">
                   <h2 class="text-xl font-bold">Milk Tea</h2>
                   <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
@@ -68,7 +75,7 @@
               </div>
               <!-- card 2 -->
               <div class="bg-gray-50 shadow-lg rounded-lg p-5">
-                <img src="images/tea-2.png" alt="" class="w-100 h-48 object-contain rounded-lg mb-4">
+                <img src="images/tea-2.png" alt="" class="w-full h-48 object-contain rounded-lg mb-4">
                 <div class="text-center p-2">
                   <h2 class="text-xl font-bold">Black Tea</h2>
                   <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
@@ -76,7 +83,7 @@
               </div>
               <!-- card 3 -->
               <div class="bg-gray-50 shadow-lg rounded-lg p-5">
-                <img src="images/tea-3.png" alt="" class="w-100 h-48 object-contain rounded-lg mb-4">
+                <img src="images/tea-3.png" alt="" class="w-full h-48 object-contain rounded-lg mb-4">
                 <div class="text-center p-2">
                   <h2 class="text-xl font-bold">Lemon Tea</h2>
                   <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
@@ -84,7 +91,7 @@
               </div>
               <!-- card 4 -->
               <div class="bg-gray-50 shadow-lg rounded-lg p-5">
-                <img src="images/tea-4.png" alt="" class="w-100 h-48 object-contain rounded-lg mb-4">
+                <img src="images/tea-4.png" alt="" class="w-full h-48 object-contain rounded-lg mb-4">
                 <div class="text-center p-2">
                   <h2 class="text-xl font-bold">Green Tea</h2>
                   <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
